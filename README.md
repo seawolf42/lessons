@@ -5,3 +5,4 @@ All the lessons and presentations by me, either directly in this repo or linked 
 # Table of Contents
 
 * [Map/Filter/Reduce](./map-filter-reduce/MapReduce.ipynb)
+* [Logging](./logging/Logging.ipynb)
