@@ -4,7 +4,13 @@ All the lessons and presentations by me, either directly in this repo or linked 
 
 # Table of Contents
 
+## Lessons
+
 * [Map/Filter/Reduce](./map-filter-reduce/MapReduce.ipynb)
 * [Logging](./logging/Logging.ipynb)
 * [Formatted Printing](./formatted-printing/Formatted%20Printing.ipynb)
 * [SQLAlchemy](./sqlalchemy/SQLAlchemy.ipynb)
+
+## Lightning Talks
+
+* [Mocks](./lightning-talks/Mocks.ipynb)
