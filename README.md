@@ -10,6 +10,7 @@ All the lessons and presentations by me, either directly in this repo or linked 
 * [Logging](./logging/Logging.ipynb)
 * [Formatted Printing](./formatted-printing/Formatted%20Printing.ipynb)
 * [SQLAlchemy](./sqlalchemy/SQLAlchemy.ipynb)
+* [Unit Testing](./unit-testing/Unit%20Testing.ipynb)
 
 ## Lightning Talks
 
