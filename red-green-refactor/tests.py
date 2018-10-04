@@ -20,3 +20,9 @@ def test_invalid_input():
 def test_length():
     assert not password('aB3defg')
     assert password('aB3defgh')
+
+
+def test_contains_lower_case():
+    assert not password('AB3DEFGH')
+    assert password('aB3DEFGH')
+    assert password('AB3DEFGh')

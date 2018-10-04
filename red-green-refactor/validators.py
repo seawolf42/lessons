@@ -3,4 +3,6 @@ def password(value):
         return False
     if len(value) < 8:
         return False
+    if value.upper() == value:
+        return False
     return True
