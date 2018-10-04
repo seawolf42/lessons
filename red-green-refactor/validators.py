@@ -7,11 +7,6 @@ def password(value):
         return False
     if value.lower() == value:
         return False
-    has_digits = False
-    for c in value:
-        if c.isdigit():
-            has_digits = True
-            continue
-    if not has_digits:
+    if len(set(value).intersection(set('1234567890'))) == 0:
         return False
     return True
