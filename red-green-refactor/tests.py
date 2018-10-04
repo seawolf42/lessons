@@ -15,3 +15,8 @@ def test_invalid_input():
     assert not password({})
     assert not password(1)
     assert not password(1.)
+
+
+def test_length():
+    assert not password('aB3defg')
+    assert password('aB3defgh')
