@@ -5,4 +5,6 @@ def password(value):
         return False
     if value.upper() == value:
         return False
+    if value.lower() == value:
+        return False
     return True

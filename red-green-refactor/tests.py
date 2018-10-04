@@ -26,3 +26,9 @@ def test_contains_lower_case():
     assert not password('AB3DEFGH')
     assert password('aB3DEFGH')
     assert password('AB3DEFGh')
+
+
+def test_contains_upper_case():
+    assert not password('ab3defgh')
+    assert password('aB3defgh')
+    assert password('ab3defgH')
