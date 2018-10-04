@@ -7,3 +7,11 @@
 # must contain at least one number
 
 from validators import password
+
+
+def test_invalid_input():
+    assert not password(None)
+    assert not password([])
+    assert not password({})
+    assert not password(1)
+    assert not password(1.)
