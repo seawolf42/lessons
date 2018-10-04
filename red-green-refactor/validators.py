@@ -7,4 +7,11 @@ def password(value):
         return False
     if value.lower() == value:
         return False
+    has_digits = False
+    for c in value:
+        if c.isdigit():
+            has_digits = True
+            continue
+    if not has_digits:
+        return False
     return True

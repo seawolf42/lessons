@@ -32,3 +32,9 @@ def test_contains_upper_case():
     assert not password('ab3defgh')
     assert password('aB3defgh')
     assert password('ab3defgH')
+
+
+def test_contains_number():
+    assert not password('aBcdefgh')
+    assert password('aB3defgh')
+    assert password('aBc4efgh')
