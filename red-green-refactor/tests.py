@@ -5,3 +5,5 @@
 # must contain at least one lower-case letter
 # must contain at least one upper-case letter
 # must contain at least one number
+
+from validators import password
