@@ -1,5 +1,4 @@
 import uuid
-import math
 import os
 import random
 
@@ -12,11 +11,10 @@ def get_data(mapsize=10, nummaps=4):
 
 def mapfn(key, value):
     print('mapfn: {0}, {1}'.format(key, value))
-    import math
     import random
     import uuid
     random.seed(uuid.uuid4())
-    inside = sum(math.sqrt(random.random() ** 2 + random.random() ** 2) <= 1. for i in xrange(value))
+    inside = sum((random.random() ** 2 + random.random() ** 2) <= 1. for i in xrange(value))
     yield 'totals', (inside, value)
 
 
