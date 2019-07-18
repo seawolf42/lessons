@@ -13,6 +13,7 @@ All the lessons and presentations by me, either directly in this repo or linked 
 * [Unit Testing](./unit-testing/Unit%20Testing.ipynb)
 * [Decorators](./decorators/Decorators.ipynb)
 * [Red-Green-Refactor](./red-green-refactor/README.md)
+* [Computing Pi using Map/Reduce](./pi-map-reduce/MapReduce.ipynb)
 
 ## Lightning Talks
 
