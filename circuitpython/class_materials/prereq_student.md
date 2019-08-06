@@ -22,6 +22,14 @@ The following soft skills will help with successfully completing this workshop:
 
 ## What to do
 
+
+### Prerequisite Software
+
+You don't actually need any special software to use your Circuit Playground Express other than a good editor.
+
+Well, almost. Windows <img src="./images/icon-windows.jpg" height ="15" alt="windows logo"> users will need [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) installed. Putty is an application that makes communicating with serial devices easier. It is highly recommended you install this prior to coming to the workshop.
+
+
 ### Learning methods
 
 The workshop is about three hours and covers a lot of material. Anything you can do to optimize your learning experience will be beneficial. Below are just some suggestions:
@@ -43,6 +51,7 @@ In the hands-on practice session, you will be using command-line tools interact 
 
 * [Linux/Mac command-line](https://files.fosswire.com/2007/08/fwunixref.pdf)
 * [Windows command-line](http://www.cs.columbia.edu/~sedwards/classes/2017/1102-spring/Command%20Prompt%20Cheatsheet.pdf)
+* [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (for Windows users only)
 
 
 <!-- begin auto-generated nav-links section -->
