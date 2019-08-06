@@ -1,7 +1,7 @@
 HIERARCHY = ('Table of Contents', './README.md', (
     ('Prerequisites', None, (
-        ('Students', './prereq_students.md', ()),
-        ('Instructor', './prereq_instructor', ()),
+        ('Students', './prereq_student.md', ()),
+        ('Instructor', './prereq_instructor.md', ()),
     )),
     ('Environment Setup', './environment.md', (
         ('Development Environment', './setup_environment', ()),
