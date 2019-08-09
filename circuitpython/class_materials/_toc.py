@@ -3,9 +3,9 @@ HIERARCHY = ('Table of Contents', './README.md', (
         ('Students', './prereq_student.md', ()),
         ('Instructor', './prereq_instructor.md', ()),
     )),
-    ('Environment Setup', './environment.md', (
-        ('Development Environment', './setup_environment', ()),
+    ('Environment Setup', './setup.md', (
         ('Connecting to Your Computer', './setup_connection.md', ()),
+        ('Development Environment', './setup_environment', ()),
     )),
     ('Program 1: Buttons and Red LED', './exercise_01.md', ()),
     ('Program 2: Touchpads', './exercise_02.md', ()),
