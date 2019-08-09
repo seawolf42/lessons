@@ -21,7 +21,7 @@ This workshop is intended to be as 'hands-on' as possible. While some lecture an
 * We strongly recommend the teaching practices suggested by [Software Carpentry](https://carpentries.github.io/instructor-training/14-live/index.html), including: sticky notes, minute cards, one up/one down, using their own machines, collaborative note taking, pair programming, and the peak rule
 
 
-## What to do
+## What to Do
 
 This workshop is designed to take about 3-4 hours. It involves writing code in Python, installing and running it on a board running [CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython), and figuring out how to figure it out when it doesn't work as expected.
 

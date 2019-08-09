@@ -14,7 +14,7 @@ It's common to write a "hello world" program as your first experiment in any lan
 Simple, we set up a serial connection to the board. The board is connected through a USB cable, and USB is just a particular kind of serial connection. What we want to do is see the output of a print statement on our computer screen.
 
 
-## Implementation
+## What to Do
 
 Disconnect your board from your computer if it is connected. We will need to determine what `tty` device it is using.
 

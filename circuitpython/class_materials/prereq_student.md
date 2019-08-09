@@ -20,7 +20,7 @@ The following soft skills will help with successfully completing this workshop:
 * a basic understanding of what programming is
 
 
-## What to do
+## What to Do
 
 
 ### Prerequisite Software
