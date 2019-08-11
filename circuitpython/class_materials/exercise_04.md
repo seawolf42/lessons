@@ -43,7 +43,7 @@ while True:
     time.sleep(.1)
 ```
 
-Save the program on your CPX as `code.py`. Once it saves, you should be able to use your board as a thermometer: it will start with 2-3 NeoPixels lit, and if you touch the thermal sensor additional lights should light to show the increase in temperature.
+Save the program on your CPX as `code.py`. Once it saves, you should be able to use your board as a thermometer: it will start with two NeoPixels lit, and if you touch the thermal sensor additional lights should light to show the increase in temperature from your skin.
 
 ![green sticky note](images/sticky-note-green.png)
 
@@ -52,15 +52,18 @@ Save the program on your CPX as `code.py`. Once it saves, you should be able to 
 
 There are a few new things going on in this program, so let's break them down.
 
+
 ### Thermal Sensor
 
 The CPX board has a thermal sensor that returns the temperature in degrees celsius. You read the value at `cpx.temperature` and you get back a floating point value.
+
 
 ### Ambient Temperature
 
 When this program is first run, it might be at the beach or in a snowstorm. Showing changes in temperature across such a wide range of possible values make it hard to see small changes. Instead we calibrate the sensor first and then show changes near that calibrated value.
 
-The basic strategy for this is to measure the temperature when the program starts and just save it. That becomes the benchmark for all future readings to be compared to. That initial reading will be represented by three lights, so we can see if the temperature goes up a few degrees and down a little by more or less lights being lit.
+The basic strategy for this is to measure the temperature when the program starts and just save it. That becomes the benchmark for all future readings to be compared to. That initial reading will be represented by "two point five" lights, so we can see two lights light up initially and then compare future readings to that value do display an appropriate new number of lights.
+
 
 ### Range-Scaling Values
 
@@ -86,7 +89,7 @@ The `map_range()` function takes 5 values:
 * the lower bound for the target scale
 * the upper bound for the target scale
 
-In the call above, we are effectively saying, "take the value we just read, and put it on a scale from 1/2 degree below to 2.5 degrees above the ambient temperature (whatever it was) and map it to a value from 0 to 10". As long as the current temperature is between that range, some number of lights will be lit. If it goes below or above that range, all or none (respectively) of the lights will be lit.
+In the call above, we are effectively saying, "take the value we just read, and put it on a scale from 1/2 degree below to 2.5 degrees above the ambient temperature (whatever it was) and map it to a value from 0 to 10". As long as the current temperature is within that range, some number of lights will be lit. If it goes below or above that range, all or none (respectively) of the lights will be lit.
 
 We then use that value to set the appropriate color to each of the NeoPixels.
 

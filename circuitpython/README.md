@@ -32,13 +32,12 @@ There are many languages you can use to program the CPX board, but this class is
 
 Participants should expect to achieve the following learning objectives upon completing this workshop:
 
-* #TODO
-* #TODO
+* **TODO**
+* **TODO**
 
 ## Testimony/Feedback...
 
-#TODO
-
+**TODO**
 
 
 ## Preparatory Lessons
