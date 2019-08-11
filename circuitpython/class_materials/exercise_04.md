@@ -28,17 +28,22 @@ black = (0, 0, 0)
 color = (255, 0, 0)
 
 ambient = cpx.temperature
+print('ambient:', ambient)
 
+print('starting main loop')
 while True:
-    threshold = simpleio.map_range(
-        cpx.temperature,
+    temperature = cpx.temperature
+    print('temperature:', cpx.temperature)
+    measurement = simpleio.map_range(
+        temperature,
         ambient - .5,
         ambient + 2.5,
         0,
         10,
     )
+    print('measurement:', measurement)
     for i in range(10):
-        cpx.pixels[i] = color if i < threshold else black
+        cpx.pixels[i] = color if i < measurement else black
     cpx.pixels.show()
     time.sleep(.1)
 ```
@@ -92,6 +97,11 @@ The `map_range()` function takes 5 values:
 In the call above, we are effectively saying, "take the value we just read, and put it on a scale from 1/2 degree below to 2.5 degrees above the ambient temperature (whatever it was) and map it to a value from 0 to 10". As long as the current temperature is within that range, some number of lights will be lit. If it goes below or above that range, all or none (respectively) of the lights will be lit.
 
 We then use that value to set the appropriate color to each of the NeoPixels.
+
+
+### Print Statements
+
+Don't forget to use `print()` statements liberally to see what's going on in your code!
 
 
 ## References

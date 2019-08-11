@@ -33,6 +33,7 @@ def decay_color(current):
 
 current = 0
 
+print('starting main loop')
 while True:
     cpx.pixels[current] = color
     cpx.pixels.show()

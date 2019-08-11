@@ -36,6 +36,7 @@ from adafruit_circuitplayground.express import cpx
 
 import time
 
+print('starting main loop')
 while True:
     if cpx.switch:
         cpx.red_led = cpx.button_a
@@ -59,17 +60,26 @@ from adafruit_circuitplayground.express import cpx
 
 Because this import is required for just about any program you will write for your CPX, we follow the convention of always making it the top line of every program.
 
+
+### Printing
+
+Since there's not really a way to debug a program on the board itself, the easiest way to debug is to print output to the console. Use `print()` statements wherever you want to find out what's going on in your program!
+
+
 ### Red LED
 
 There is one red LED on the board, and it can be controlled by setting the `cpx.red_led` property to `True` (on) or `False` (off).
+
 
 ### Buttons
 
 There are two buttons on the board that are `True` when pressed and `False` when not pressed. Their values can be read at `cpx.button_a` and `cpx.button_b`.
 
+
 ### Switch
 
 There is a two-position switch on the board that is `True` when it is moved to the left and `False` when it it moved to the right. It can be read at `cpx.switch`.
+
 
 ### Program Loop (Event Loop)
 

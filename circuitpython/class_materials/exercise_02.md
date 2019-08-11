@@ -33,6 +33,7 @@ white = (255, 255, 255)
 def get_color(switch, color=white):
     return color if switch else black
 
+print('starting main loop')
 while True:
     cpx.pixels[0] = get_color(cpx.touch_A1)
     cpx.pixels[1] = get_color(cpx.touch_A2)

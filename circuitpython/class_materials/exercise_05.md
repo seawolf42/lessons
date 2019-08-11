@@ -30,7 +30,9 @@ cpx.pixels[0] = color
 cpx.pixels[9] = color
 
 ambient = cpx.light
+print('ambient:', ambient)
 
+print('starting main loop')
 while True:
     cpx.pixels.brightness = simpleio.map_range(cpx.light, ambient * .3, 320, 0, .3)
     time.sleep(0.1)
