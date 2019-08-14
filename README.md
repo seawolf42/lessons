@@ -18,3 +18,8 @@ All the lessons and presentations by me, either directly in this repo or linked 
 ## Lightning Talks
 
 * [Mocks](./lightning-talks/Mocks.ipynb)
+
+
+## Workshops
+
+* [Intro to the Circuit Playground Express](./circuitpython/README.md)
