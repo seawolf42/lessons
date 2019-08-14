@@ -130,5 +130,5 @@ See if you can modify this program so that the brightness of the pixel changes a
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Program 5: Light Sensor](./exercise_phototransistor.md) | [Exercises](./exercises.md) | [Table of Contents](./README.md) |
+| [Program 5: Light Sensor](./exercise_phototransistor.md) | [Exercises](./exercises.md) | [Final Remarks](./final.md) |
 <!-- end auto-generated section -->

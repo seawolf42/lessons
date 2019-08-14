@@ -13,3 +13,4 @@
     1. [Program 4: Thermister](./exercise_thermistor.md)
     1. [Program 5: Light Sensor](./exercise_phototransistor.md)
     1. [Program 6: Accelerometer](./exercise_accelerometer.md)
+1. [Final Remarks](./final.md)

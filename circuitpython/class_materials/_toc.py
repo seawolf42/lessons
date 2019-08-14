@@ -15,4 +15,5 @@ HIERARCHY = ('Table of Contents', './README.md', (
         ('Program 5: Light Sensor', './exercise_phototransistor.md', ()),
         ('Program 6: Accelerometer', './exercise_accelerometer.md', ()),
     )),
+    ('Final Remarks', './final.md', ()),
 ))
