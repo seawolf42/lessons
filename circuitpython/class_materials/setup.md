@@ -11,5 +11,5 @@ During this portion of the workshop, we will be taking a look at the Circuit Pla
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Instructor](./prereq_instructor.md) | [Table of Contents](./README.md) | [Connecting to Your Computer](./setup_connection.md) |
+| [Prerequisites: Students](./prereq_student.md) | [Table of Contents](./README.md) | [Connecting to Your Computer](./setup_connection.md) |
 <!-- end auto-generated section -->

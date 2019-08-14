@@ -1,5 +1,5 @@
 <!-- begin auto-generated title section -->
-# Instructor
+# Prerequisites: Instructor
 <!-- end auto-generated section -->
 
 
@@ -56,5 +56,5 @@ Before running the workshop, make sure you've personally written and run all the
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Students](./prereq_student.md) | [Prerequisites](./prereq.md) | [Environment Setup](./setup.md) |
+| [Prerequisites](./prereq.md) | [Prerequisites](./prereq.md) | [Prerequisites: Students](./prereq_student.md) |
 <!-- end auto-generated section -->

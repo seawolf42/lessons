@@ -1,5 +1,5 @@
 <!-- begin auto-generated title section -->
-# Students
+# Prerequisites: Students
 <!-- end auto-generated section -->
 
 
@@ -53,5 +53,5 @@ In the hands-on practice session, you will be using command-line tools interact 
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Prerequisites](./prereq.md) | [Prerequisites](./prereq.md) | [Instructor](./prereq_instructor.md) |
+| [Prerequisites: Instructor](./prereq_instructor.md) | [Prerequisites](./prereq.md) | [Environment Setup](./setup.md) |
 <!-- end auto-generated section -->

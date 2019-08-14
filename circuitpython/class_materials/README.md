@@ -1,8 +1,8 @@
 # Table of Contents
 
 1. [Prerequisites](./prereq.md)
-    1. [Students](./prereq_student.md)
-    1. [Instructor](./prereq_instructor.md)
+    1. [Prerequisites: Instructor](./prereq_instructor.md)
+    1. [Prerequisites: Students](./prereq_student.md)
 1. [Environment Setup](./setup.md)
     1. [Connecting to Your Computer](./setup_connection.md)
     1. [Development Environment](./setup_environment.md)
