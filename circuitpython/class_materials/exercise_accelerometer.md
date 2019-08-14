@@ -109,7 +109,7 @@ pixel_id = round(simpleio.map_range(r, -math.pi, math.pi, 5, -5) + 0.5)
 ... and finally we take our number in the range (-5, 4) and convert it to (0, 10) using modulus:
 
 ```python
-pixel_id = round(simpleio.map_range(r, -math.pi, math.pi, 5, -5) + 0.5)
+pixel_id = round(simpleio.map_range(r, -math.pi, math.pi, 5, -5) + 0.5) % 10
 ```
 
 The net result is that for any combination of `x` and `y`, we get back the ID of the pixel that is closest to "up" for those values.
