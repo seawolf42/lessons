@@ -8,6 +8,11 @@
 I hope you've enjoyed learing your way around the Circuit Playground Express! Because it's a very easy board to work with and because Python is such an intuitive language for this kind of thing, we managed to cover a lot of ground!
 
 
+## Find an Error?
+
+If you found any problems in the code or in the descriptions of things, I welcome pull requests! Just navigate to the Issues tab and let me know about the problem or submit a pull request with the proposed change. Thanks!
+
+
 ## Feedback
 
 Please take a moment to give the instructor some feedback!
