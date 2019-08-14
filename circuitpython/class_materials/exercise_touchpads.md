@@ -52,7 +52,7 @@ Save the program on your CPX as `code.py`. Once it saves, you should be able to 
 ![green sticky note](images/sticky-note-green.png)
 
 
-# Deep Dive
+## Deep Dive
 
 ### NeoPixels
 

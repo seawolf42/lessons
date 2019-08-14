@@ -50,7 +50,7 @@ Save the program on your CPX as `code.py`. Once it saves, you should see the Neo
 ![green sticky note](images/sticky-note-green.png)
 
 
-# Deep Dive
+## Deep Dive
 
 This program demonstrates a very simple animation loop. The loop picks a `current` pixel (starting at `0`) and lights it, then it reduces the color of each pixel by a set amount, then it advances to the next pixel and repeats the process. The net effect is any one pixel gets bright and then slowly dims, and the animation appears to be a rotating ring of light around the board.
 
