@@ -1,5 +1,5 @@
 <!-- begin auto-generated title section -->
-# Program 4: Thermometer
+# Program 4: Thermister
 <!-- end auto-generated section -->
 
 
@@ -59,9 +59,9 @@ Save the program on your CPX as `code.py`. Once it saves, you should be able to 
 There are a few new things going on in this program, so let's break them down.
 
 
-### Thermal Sensor
+### Thermistor (Thermal Sensor)
 
-The CPX board has a thermal sensor that returns the temperature in degrees celsius. You read the value at `cpx.temperature` and you get back a floating point value.
+The CPX board has a thermistor that returns the temperature in degrees celsius. You read the value at `cpx.temperature` and you get back a floating point value.
 
 
 ### Ambient Temperature
@@ -114,5 +114,5 @@ Don't forget to use `print()` statements liberally to see what's going on in you
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Program 3: NeoPixels](./exercise_neopixels.md) | [Exercises](./exercises.md) | [Program 5: Light Sensor](./exercise_light_sensor.md) |
+| [Program 3: NeoPixels](./exercise_neopixels.md) | [Exercises](./exercises.md) | [Program 5: Light Sensor](./exercise_phototransistor.md) |
 <!-- end auto-generated section -->

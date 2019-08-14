@@ -60,5 +60,5 @@ We start by turning on pixels 0 and 9 (at the top of the board) to white. The CP
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Program 4: Thermometer](./exercise_thermometer.md) | [Exercises](./exercises.md) | [Program 6: Accelerometer](./exercise_accelerometer.md) |
+| [Program 4: Thermister](./exercise_thermistor.md) | [Exercises](./exercises.md) | [Program 6: Accelerometer](./exercise_accelerometer.md) |
 <!-- end auto-generated section -->

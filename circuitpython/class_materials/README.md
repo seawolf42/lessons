@@ -10,6 +10,6 @@
     1. [Program 1: Buttons and Red LED](./exercise_buttons_and_leds.md)
     1. [Program 2: Touchpads](./exercise_touchpads.md)
     1. [Program 3: NeoPixels](./exercise_neopixels.md)
-    1. [Program 4: Thermometer](./exercise_thermometer.md)
-    1. [Program 5: Light Sensor](./exercise_light_sensor.md)
+    1. [Program 4: Thermister](./exercise_thermistor.md)
+    1. [Program 5: Light Sensor](./exercise_phototransistor.md)
     1. [Program 6: Accelerometer](./exercise_accelerometer.md)

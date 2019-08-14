@@ -67,5 +67,5 @@ The main loop first sets the `current` pixel to the primary `color`, then calls 
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Program 2: Touchpads](./exercise_touchpads.md) | [Exercises](./exercises.md) | [Program 4: Thermometer](./exercise_thermometer.md) |
+| [Program 2: Touchpads](./exercise_touchpads.md) | [Exercises](./exercises.md) | [Program 4: Thermister](./exercise_thermistor.md) |
 <!-- end auto-generated section -->
