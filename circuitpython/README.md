@@ -15,7 +15,7 @@ This workshop covers...
 
 
 * [Installing software](./class_materials/setup.md): basic installation of the tools you need to code the CPX board
-* [Writing Programs](./class_materials/exercise_buttons_and_leds.md): source code and full descriptions of several programs that demonstrate use of many of the inputs and outputs on the board, including the buttons, switch, capacitive touch sensors, thermometer, light sensor, and NeoPixels
+* [Writing Programs](./class_materials/exercises.md): source code and full descriptions of several programs that demonstrate use of many of the inputs and outputs on the board, including the buttons, switch, capacitive touch sensors, thermometer, light sensor, and NeoPixels
 
 
 ### What not to expect
@@ -42,5 +42,5 @@ Participants should expect to achieve the following learning objectives upon com
 
 ## Preparatory Lessons
 
-* [Instructor Preparation](./prereq_instructor.md): Steps the instructor should take to prepare for the workshop
-* [Student Preparation](./prereq_student.md): Steps the students should take to prepare for the workshop
+* [Instructor Preparation](./class_materials/prereq_instructor.md): Steps the instructor should take to prepare for the workshop
+* [Student Preparation](./class_materials/prereq_student.md): Steps the students should take to prepare for the workshop
