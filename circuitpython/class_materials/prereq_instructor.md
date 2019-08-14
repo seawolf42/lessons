@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Instructor
 <!-- end auto-generated section -->
 
 
@@ -58,4 +59,7 @@ Before running the workshop, make sure you've personally written and run all the
 
 
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Students](./prereq_student.md) | [Prerequisites](./prereq.md) | [Environment Setup](./setup.md) |
 <!-- end auto-generated section -->

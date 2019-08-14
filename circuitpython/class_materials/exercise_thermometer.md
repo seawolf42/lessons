@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Program 4: Thermometer
 <!-- end auto-generated section -->
 
 
@@ -111,4 +112,7 @@ Don't forget to use `print()` statements liberally to see what's going on in you
 
 
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Program 3: NeoPixels](./exercise_neopixels.md) | [Exercises](./exercises.md) | [Program 5: Light Sensor](./exercise_light_sensor.md) |
 <!-- end auto-generated section -->

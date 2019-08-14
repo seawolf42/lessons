@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Program 6: Accelerometer
 <!-- end auto-generated section -->
 
 
@@ -125,5 +126,9 @@ See if you can modify this program so that the brightness of the pixel changes a
 * [2-Argument Arctangent](https://en.wikipedia.org/wiki/Atan2)
 * [`math.atan2(x, y)`](https://docs.python.org/3/library/math.html#math.atan2)
 
+
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Program 5: Light Sensor](./exercise_light_sensor.md) | [Exercises](./exercises.md) | [Table of Contents](./README.md) |
 <!-- end auto-generated section -->

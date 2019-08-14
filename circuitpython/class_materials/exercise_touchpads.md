@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Program 2: Touchpads
 <!-- end auto-generated section -->
 
 
@@ -90,4 +91,7 @@ By calling this, we get back either the color we specify (the funciton's `color`
 
 
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Program 1: Buttons and Red LED](./exercise_buttons_and_leds.md) | [Exercises](./exercises.md) | [Program 3: NeoPixels](./exercise_neopixels.md) |
 <!-- end auto-generated section -->

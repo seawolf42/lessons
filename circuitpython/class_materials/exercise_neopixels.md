@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Program 3: NeoPixels
 <!-- end auto-generated section -->
 
 
@@ -64,4 +65,7 @@ The main loop first sets the `current` pixel to the primary `color`, then calls 
 
 
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Program 2: Touchpads](./exercise_touchpads.md) | [Exercises](./exercises.md) | [Program 4: Thermometer](./exercise_thermometer.md) |
 <!-- end auto-generated section -->

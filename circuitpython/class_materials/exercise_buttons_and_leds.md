@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Program 1: Buttons and Red LED
 <!-- end auto-generated section -->
 
 
@@ -104,4 +105,7 @@ Sleep times are entered as seconds and can either be integer or floating-point v
 
 
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Exercises](./exercises.md) | [Exercises](./exercises.md) | [Program 2: Touchpads](./exercise_touchpads.md) |
 <!-- end auto-generated section -->

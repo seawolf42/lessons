@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Connecting to Your Computer
 <!-- end auto-generated section -->
 
 
@@ -127,4 +128,7 @@ The board listens for input on the `tty` connection and sends all output to the 
 
 
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Environment Setup](./setup.md) | [Environment Setup](./setup.md) | [Development Environment](./setup_environment.md) |
 <!-- end auto-generated section -->
