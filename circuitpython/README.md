@@ -14,8 +14,8 @@ Welcome to the **Introduction to the [Circuit Playground Express](https://learn.
 This workshop covers...
 
 
-* [Installing software](./installing_tools.md): basic installation of the tools you need to code the CPX board
-* [Writing Programs](./example_01.md): source code and full descriptions of several programs that demonstrate use of many of the inputs and outputs on the board, including the buttons, switch, capacitive touch sensors, thermometer, light sensor, and NeoPixels
+* [Installing software](./class_materials/setup.md): basic installation of the tools you need to code the CPX board
+* [Writing Programs](./class_materials/exercise_buttons_and_leds.md): source code and full descriptions of several programs that demonstrate use of many of the inputs and outputs on the board, including the buttons, switch, capacitive touch sensors, thermometer, light sensor, and NeoPixels
 
 
 ### What not to expect
