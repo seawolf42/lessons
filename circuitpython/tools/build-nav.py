@@ -18,7 +18,7 @@ TITLE_OPEN_TAG = AUTO_SECTION_TAGS[0].format('title')
 NAV_OPEN_TAG = AUTO_SECTION_TAGS[0].format('nav-links')
 
 TITLE_CONTENT = '{OPEN_TAG}\n# {title}\n{CLOSE_TAG}\n\n\n'
-NAV_CONTENT = '\n\n{0}\n'.format('''{OPEN_TAG}
+NAV_CONTENT = '\n\n\n{0}\n'.format('''{OPEN_TAG}
 | Previous | Up | Next |
 |:---------|:---:|-----:|
 | [{prev_title}]({prev_url}) | [{up_title}]({up_url}) | [{next_title}]({next_url}) |
@@ -139,5 +139,5 @@ def main():
 
 if __name__ == '__main__':
     log.addHandler(logging.StreamHandler())
-    log.setLevel(LOGLEVEL)
+    log.setLevel(getattr(logging, os.environ.get('LOG_LEVEL', 'INFO')))
     main()
