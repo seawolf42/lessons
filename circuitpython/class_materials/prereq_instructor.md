@@ -3,11 +3,6 @@
 <!-- end auto-generated section -->
 
 
-## Time-box
-
-N/A: these preparatory steps should be completed prior to the start of the course.
-
-
 ## Overview
 
 This section is intended for the workshop **instructor**. It outlines what the instructor should do to successfully execute this workshop.
