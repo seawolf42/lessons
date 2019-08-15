@@ -44,3 +44,8 @@ Participants should expect to achieve the following learning objectives upon com
 
 * [Instructor Preparation](./class_materials/prereq_instructor.md): Steps the instructor should take to prepare for the workshop
 * [Student Preparation](./class_materials/prereq_student.md): Steps the students should take to prepare for the workshop
+
+
+## The Course
+
+Ready? [Let's go!](class_materials/README.md)
