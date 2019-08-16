@@ -81,5 +81,5 @@ None! Part of what makes `circuitpython` so elegant is that no specialied tools 
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Connecting to Your Computer](./setup_connection.md) | [Environment Setup](./setup.md) | [Exercises](./exercises.md) |
+| [Connecting to Your Computer](./setup_connection.md) | [Setting Everything Up](./setup.md) | [Exercises](./exercises.md) |
 <!-- end auto-generated section -->

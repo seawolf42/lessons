@@ -1,4 +1,5 @@
 <!-- begin auto-generated title section -->
+# Installing/Updating CircuitPython
 <!-- end auto-generated section -->
 
 
@@ -40,4 +41,7 @@ One nice thing about the AdaFruit boards is that they are designed to make this 
 
 
 <!-- begin auto-generated nav-links section -->
+| Previous | Up | Next |
+|:---------|:---:|-----:|
+| [Setting Everything Up](./setup.md) | [Setting Everything Up](./setup.md) | [Connecting to Your Computer](./setup_connection.md) |
 <!-- end auto-generated section -->

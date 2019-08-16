@@ -53,5 +53,5 @@ In the hands-on practice session, you will be using command-line tools interact 
 <!-- begin auto-generated nav-links section -->
 | Previous | Up | Next |
 |:---------|:---:|-----:|
-| [Prerequisites: Instructor](./prereq_instructor.md) | [Prerequisites](./prereq.md) | [Environment Setup](./setup.md) |
+| [Prerequisites: Instructor](./prereq_instructor.md) | [Prerequisites](./prereq.md) | [Setting Everything Up](./setup.md) |
 <!-- end auto-generated section -->

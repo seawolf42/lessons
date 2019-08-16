@@ -3,7 +3,8 @@ HIERARCHY = ('Table of Contents', './README.md', (
         ('Prerequisites: Instructor', './prereq_instructor.md', ()),
         ('Prerequisites: Students', './prereq_student.md', ()),
     )),
-    ('Environment Setup', './setup.md', (
+    ('Setting Everything Up', './setup.md', (
+        ('Installing/Updating CircuitPython', './setup_board.md', ()),
         ('Connecting to Your Computer', './setup_connection.md', ()),
         ('Development Environment', './setup_environment.md', ()),
     )),
