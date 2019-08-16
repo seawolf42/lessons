@@ -105,6 +105,11 @@ We then use that value to set the appropriate color to each of the NeoPixels.
 Don't forget to use `print()` statements liberally to see what's going on in your code!
 
 
+## Experience Points
+
+See if you can modify this program so that all the pixels are lit but the color changes from bright red to bright blue as the temperature changes from ambient.
+
+
 ## References
 
 * [Docs » adafruit_circuitplayground.express](https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/api.html)

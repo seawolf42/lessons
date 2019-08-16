@@ -50,6 +50,7 @@ Save the program on your CPX as `code.py`. Once it saves, you should be able to 
 
 There's a lot going on in this program, let's dive in!
 
+
 ### Accelerometer
 
 The board has an accelerometer that returns a tuple of three values:
@@ -113,6 +114,7 @@ pixel_id = round(simpleio.map_range(r, -math.pi, math.pi, 5, -5) + 0.5) % 10
 ```
 
 The net result is that for any combination of `x` and `y`, we get back the ID of the pixel that is closest to "up" for those values.
+
 
 ## Experience Points
 

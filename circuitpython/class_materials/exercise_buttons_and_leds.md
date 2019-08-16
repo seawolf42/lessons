@@ -98,6 +98,11 @@ while True:
 Sleep times are entered as seconds and can either be integer or floating-point values. `time.sleep(.1)` will cause the board to do nothing at all for 100ms (0.1 seconds). Typically the longer the board sleeps between iterations of the loop, the less power it uses but the more "laggy" it seems from when you push a button until you see the result. I have found that right around 100ms is where the response is fast enough that it's not distracting, but you might want a smaller value if responsiveness is not quick enough for your liking (try `.05` to see the difference).
 
 
+## Experience Points
+
+See if you can modify this program so that the LED flashes differently for each of the buttons (maybe 1 flash for button a and two flashes for button b) instead of just staying on.
+
+
 ## References
 
 * [Docs » adafruit_circuitplayground.express](https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/api.html)

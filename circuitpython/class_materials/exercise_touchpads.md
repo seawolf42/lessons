@@ -82,6 +82,11 @@ def get_color(switch, color=white):
 By calling this, we get back either the color we specify (the funciton's `color` parameter) or black (`(0, 0, 0)`) based on whether the source is `True` or `False` (respectively).
 
 
+## Experience Points
+
+See if you can modify this program so that the pixel that lights is the one that is closest to the touch sensor.
+
+
 ## Resources
 
 * [Docs » adafruit_circuitplayground.express](https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/api.html)

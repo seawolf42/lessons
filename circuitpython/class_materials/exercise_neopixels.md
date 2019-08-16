@@ -58,6 +58,12 @@ The `decay_color()` method is similar to the `get_color()` method from the last 
 
 The main loop first sets the `current` pixel to the primary `color`, then calls `decay_color()` for each pixel on the board and causes all of them to display. Finally it updates the value of `current` by incrementing it (`color += 1`) and rolling it back to the start once it has passed the last pixel (`color %= 10`).
 
+
+## Experience Points
+
+See if you can modify this program so that pixel dimming preserves color; this will entail re-writing the `decay_color()` method.
+
+
 ## References
 
 * [Docs » adafruit_circuitplayground.express](https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/api.html)

@@ -51,6 +51,11 @@ This program is similar to the last in that it starts by taking an ambient measu
 We start by turning on pixels 0 and 9 (at the top of the board) to white. The CPX board has a light sensor that returns the brightness. You read the value at `cpx.light` and you get back a floating point value. We read the ambient light and then repeatedly compare current to ambient and translate our number on that scale to a brightness value between 0 and .3.
 
 
+## Experience Points
+
+See if you can modify this program so that the ambient level adjusts slowly towards the current reading. This will cause the lights to brighten when the board goes from dark to light but then dim again as they re-normalize for the new light level.
+
+
 ## Resources
 
 * [Docs » adafruit_circuitplayground.express](https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/api.html)
