@@ -23,6 +23,10 @@ The first task with your new board is to install [CircuitPython](https://learn.a
 1. Your computer should now show a drive called `CPLAYBOOT`
 1. Drag the file you downloaded onto the `CPLAYBOOT` drive
 1. Watch as a couple lights flash and the board re-mounts as `CIRCUITPY`
+1. [Download the Adafruit_CircuitPython_Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases) and save it locally to wherever you usually save downloads
+    * Pick the correct one by matching the release number in the filename (like `4.x`) to the release number of Circuit Python that you downloaded above
+1. Unzip the bundle
+1. Copy replace the `lib` folder on your CPX board with the `lib` folder from the unpacked zip file
 
 ![green sticky note](images/sticky-note-green.png)
 
@@ -33,11 +37,14 @@ The board comes with `micropython` installed, which requires all kinds of tools 
 
 One nice thing about the AdaFruit boards is that they are designed to make this upgrade easy. Any time you want to reset your board or want the latest version of `circuitpython`, just follow the steps above.
 
+The bundle that you downloaded contains all the extra libraries beyond the standard library that AdaFruit maintains for advanced functionality. In this workshop we only actually need `simpleio`, but as long as there's space on the board it's easier to just add them all. If you are building large projects, you might need to remove things from `lib` to make space for your code, but that's beyond the scope of this workshop.
+
 
 ## References
 
 * [Installing CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython)
 * [Download CircuitPython for Circuit Playground Express](https://circuitpython.org/board/circuitplayground_express/)
+* [Adafruit_CircuitPython_Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle)
 
 
 <!-- begin auto-generated nav-links section -->
