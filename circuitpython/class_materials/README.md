@@ -1,0 +1,17 @@
+# Table of Contents
+
+1. [Prerequisites](./prereq.md)
+    1. [Prerequisites: Instructor](./prereq_instructor.md)
+    1. [Prerequisites: Students](./prereq_student.md)
+1. [Setting Everything Up](./setup.md)
+    1. [Installing/Updating CircuitPython](./setup_board.md)
+    1. [Connecting to Your Computer](./setup_connection.md)
+    1. [Development Environment](./setup_environment.md)
+1. [Exercises](./exercises.md)
+    1. [Program 1: Buttons and Red LED](./exercise_buttons_and_leds.md)
+    1. [Program 2: Touchpads](./exercise_touchpads.md)
+    1. [Program 3: NeoPixels](./exercise_neopixels.md)
+    1. [Program 4: Thermister](./exercise_thermistor.md)
+    1. [Program 5: Light Sensor](./exercise_phototransistor.md)
+    1. [Program 6: Accelerometer](./exercise_accelerometer.md)
+1. [Final Remarks](./final.md)
