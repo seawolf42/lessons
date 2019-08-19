@@ -37,7 +37,21 @@ Participants should expect to achieve the following learning objectives upon com
 
 ## Testimony/Feedback...
 
-**TODO**
+Here's what attendees have had to say:
+
+> Excellent overview of how to work with the Circuit Playground Express. I feel confident playing iwth the other functions of the board.
+
+... and:
+
+> This was totally fun and interesting, an area that I would not have considered prior to hearing about the class.
+
+... and:
+
+> I really enjoyed the whole class. I like the progression of easy-to-hard code, to see all the capabilities.
+
+... and:
+
+> Fun to make the lights blink!
 
 
 ## Preparatory Lessons
