@@ -4,6 +4,7 @@ All the lessons and presentations by me, either directly in this repo or linked 
 
 # Table of Contents
 
+
 ## Lessons
 
 * [Map/Filter/Reduce](./map-filter-reduce/README.ipynb)
@@ -14,6 +15,8 @@ All the lessons and presentations by me, either directly in this repo or linked 
 * [Decorators](./decorators/README.ipynb)
 * [Red-Green-Refactor](./red-green-refactor/README.md)
 * [Computing Pi using Map/Reduce](./pi-map-reduce/README.ipynb)
+* [F-Strings](./f-strings/README.ipynb)
+
 
 ## Lightning Talks
 
