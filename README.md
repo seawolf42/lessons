@@ -17,6 +17,7 @@ All the lessons and presentations by me, either directly in this repo or linked 
 * [Computing Pi using Map/Reduce](./pi-map-reduce/README.ipynb)
 * [F-Strings](./f-strings/README.ipynb)
 * [AsyncIO](./asyncio/README.ipynb)
+* [Python Environments with `pyenv`](./pyenv/README.md)
 
 
 ## Lightning Talks
