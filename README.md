@@ -7,24 +7,24 @@ All the lessons and presentations by me, either directly in this repo or linked 
 
 ## Lessons
 
-* [Map/Filter/Reduce](./map-filter-reduce/README.ipynb)
-* [Logging](./logging/README.ipynb)
-* [Formatted Printing](./formatted-printing/README.ipynb)
-* [SQLAlchemy](./sqlalchemy/README.ipynb)
-* [Unit Testing](./unit-testing/README.ipynb)
-* [Decorators](./decorators/README.ipynb)
-* [Red-Green-Refactor](./red-green-refactor/README.md)
-* [Computing Pi using Map/Reduce](./pi-map-reduce/README.ipynb)
-* [F-Strings](./f-strings/README.ipynb)
-* [AsyncIO](./asyncio/README.ipynb)
-* [Python Environments with `pyenv`](./pyenv/README.md)
+* [Map/Filter/Reduce](./map-filter-reduce/)
+* [Logging](./logging/)
+* [Formatted Printing](./formatted-printing/)
+* [SQLAlchemy](./sqlalchemy/)
+* [Unit Testing](./unit-testing/)
+* [Decorators](./decorators/)
+* [Red-Green-Refactor](./red-green-refactor/)
+* [Computing Pi using Map/Reduce](./pi-map-reduce/)
+* [F-Strings](./f-strings/)
+* [AsyncIO](./asyncio/)
+* [Python Environments with `pyenv`](./pyenv/)
 
 
 ## Lightning Talks
 
-* [Mocks](./lightning-talks/Mocks.ipynb)
+* [Mocks](./lightning-talks/mocks/)
 
 
 ## Workshops
 
-* [Intro to the Circuit Playground Express](./circuitpython/README.md)
+* [Intro to the Circuit Playground Express](./circuitpython/)

@@ -1,0 +1,22 @@
+[[source]]
+url = 'https://pypi.org/simple'
+verify_ssl = true
+name = 'pypi'
+
+
+[packages]
+
+# jupyter
+jupyter = '*'
+
+# dependencies in lessons
+sqlalchemy = '*'
+
+[dev-packages]
+
+# environment
+pipenv = '*'
+
+
+[requires]
+python_version = '3.7'
