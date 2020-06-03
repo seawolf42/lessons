@@ -150,5 +150,4 @@ if __name__ == '__main__':
     rootLogger.addHandler(logging.StreamHandler())
     rootLogger.setLevel(getattr(logging, os.environ.get('LOG_LEVEL', 'debug').upper()))
     logging.getLogger('asyncio').setLevel(logging.WARNING)
-    log.debug('debug log')
     main()
