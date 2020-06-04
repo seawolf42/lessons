@@ -18,6 +18,7 @@ All the lessons and presentations by me, either directly in this repo or linked 
 * [F-Strings](./f-strings/)
 * [AsyncIO](./asyncio/)
 * [Python Environments with `pyenv`](./pyenv/)
+* [Building a Slackbot](./slackbot/)
 
 
 ## Lightning Talks
