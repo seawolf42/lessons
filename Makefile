@@ -26,6 +26,15 @@ reqs:
 
 
 #
+# shell
+#
+
+.PHONY: shell
+shell:
+	${PYTHON}
+
+
+#
 # serve
 #
 
