@@ -2,10 +2,7 @@
 
 All the lessons and presentations by me, either directly in this repo or linked from this repo.
 
-# Table of Contents
-
-
-## Lessons
+## Talks
 
 * [Map/Filter/Reduce](./map-filter-reduce/)
 * [Logging](./logging/)
@@ -21,11 +18,9 @@ All the lessons and presentations by me, either directly in this repo or linked 
 * [Building a Slackbot](./slackbot/)
 * [Context Managers](./context-managers/)
 
-
 ## Lightning Talks
 
 * [Mocks](./lightning-talks/mocks/)
-
 
 ## Workshops
 

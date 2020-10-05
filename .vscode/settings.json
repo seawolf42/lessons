@@ -1,0 +1,25 @@
+{
+  "python.pythonPath": "${workspaceRoot}/env/bin/python",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "${workspaceRoot}/env/bin/flake8",
+  "python.pipenvPath": "${workspaceRoot}/env/bin/pipenv",
+  "python.terminal.activateEnvironment": true,
+  "files.exclude": {
+    "env": true,
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true,
+    "**/._*": true
+  },
+  "search.exclude": {
+    "env": true,
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true,
+    "**/._*": true
+  },
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.useEditorConfig": true
+}
