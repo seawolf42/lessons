@@ -1,21 +1,14 @@
 import csv
-import sys
 
 from io import BytesIO
 from tarfile import open as tar_open
 from zipfile import ZipFile
 
 
-def rows(filename):
+def file_to_rows(filename):
     with open(filename, 'rb') as fin:
-        content = fin.read()
-        for function in _build_pipeline(filename):
-            content = function(content)
+        content = _execute_pipeline(_build_pipeline(filename), fin.read())
         yield from content
-
-
-def _extensions(filename):
-    return filename.split('.')[1:]
 
 
 def _build_pipeline(filename):
@@ -26,52 +19,56 @@ def _build_pipeline(filename):
     )
 
 
-def _raw_tgz_to_raw(zipped):
-    archive = tar_open(fileobj=BytesIO(zipped), mode='r:gz')
+def _extensions(filename):
+    return filename.split('.')[1:]
+
+
+def _execute_pipeline(pipeline, content):
+    for function in pipeline:
+        content = function(content)
+    return content
+
+
+def _bytes_tgz_to_bytes(content):
+    archive = tar_open(fileobj=BytesIO(content), mode='r:gz')
     return archive.extractfile(archive.getmembers()[0]).read()
 
 
-def _raw_zip_to_raw(zipped):
-    archive = ZipFile(BytesIO(zipped))
+def _bytes_zip_to_bytes(content):
+    archive = ZipFile(BytesIO(content))
     with open(archive.namelist()[0], 'rb') as fin:
         return fin.read()
 
 
-def _raw_to_text(raw):
-    return raw.decode('utf-8')
+def _bytes_to_text(content):
+    return content.decode('utf-8')
 
 
-_text_to_rows = str.splitlines
+_text_to_lines = str.splitlines
 
 
-def _rows_to_filtered_rows(rows):
-    return filter(lambda x: x, rows)
+def _lines_to_filtered_lines(content):
+    return (line for line in content if line)
 
 
-def _rows_csv_to_values(rows):
-    return csv.reader(rows)
+def _lines_csv_to_rows(content):
+    return csv.reader(content)
 
 
-def _rows_tsv_to_values(rows):
-    return csv.reader(rows, delimiter='\t')
+def _lines_psv_to_rows(content):
+    return csv.reader(content, delimiter='|')
 
 
-_RAW_TO_FILTERED_ROWS = (_raw_to_text, _text_to_rows, _rows_to_filtered_rows)
+def _lines_tsv_to_rows(content):
+    return csv.reader(content, delimiter='\t')
+
+
+_BYTES_TO_FILTERED_LINES = (_bytes_to_text, _text_to_lines, _lines_to_filtered_lines)
 
 _STAGES_BY_EXTENSION = dict(
-    csv=_RAW_TO_FILTERED_ROWS + (_rows_csv_to_values,),
-    tsv=_RAW_TO_FILTERED_ROWS + (_rows_tsv_to_values,),
-    tgz=(_raw_tgz_to_raw,),
-    zip=(_raw_zip_to_raw,),
+    csv=_BYTES_TO_FILTERED_LINES + (_lines_csv_to_rows,),
+    psv=_BYTES_TO_FILTERED_LINES + (_lines_psv_to_rows,),
+    tsv=_BYTES_TO_FILTERED_LINES + (_lines_tsv_to_rows,),
+    tgz=(_bytes_tgz_to_bytes,),
+    zip=(_bytes_zip_to_bytes,),
 )
-
-
-def main(filename):
-    print(filename)
-    print(_extensions(filename))
-    for row in rows(filename):
-        print(row)
-
-
-if __name__ == '__main__':
-    main(sys.argv[1])
