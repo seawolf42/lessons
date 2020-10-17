@@ -72,3 +72,15 @@ _STAGES_BY_EXTENSION = dict(
     tgz=(_bytes_tgz_to_bytes,),
     zip=(_bytes_zip_to_bytes,),
 )
+
+# _execute_pipeline = functools.partial(functools.reduce, lambda c, fn: fn(c))
+
+# _bytes_to_text = functools.partial(bytes.decode, encoding='utf-8')
+
+# _text_to_lines = str.splitlines
+
+# _lines_to_filtered_lines = functools.partial(filter, lambda x: x)
+
+# _lines_csv_to_rows = csv.reader
+# _lines_psv_to_rows = functools.partial(csv.reader, delimiter='|')
+# _lines_tsv_to_rows = functools.partial(csv.reader, delimiter='\t')
