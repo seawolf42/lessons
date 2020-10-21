@@ -1,4 +1,5 @@
 import csv
+import functools
 
 from io import BytesIO
 from tarfile import open as tar_open
@@ -7,26 +8,23 @@ from zipfile import ZipFile
 
 def file_to_rows(filename):
     with open(filename, 'rb') as fin:
-        content = _execute_pipeline(_build_pipeline(filename), fin.read())
-        yield from content
+        yield from _execute_pipeline(_build_pipeline(filename), fin)
 
 
 def _build_pipeline(filename):
     return (
         stage
-        for extension in _extensions(filename)[::-1]
+        for extension in _extensions_from_filename(filename)[::-1]
         for stage in _STAGES_BY_EXTENSION[extension]
     )
 
 
-def _extensions(filename):
+def _extensions_from_filename(filename):
     return filename.split('.')[1:]
 
 
-def _execute_pipeline(pipeline, content):
-    for function in pipeline:
-        content = function(content)
-    return content
+def _execute_pipeline(pipeline, fin):
+    return functools.reduce(lambda content, stage: stage(content), pipeline, fin.read())
 
 
 def _bytes_tgz_to_bytes(content):
@@ -36,15 +34,15 @@ def _bytes_tgz_to_bytes(content):
 
 def _bytes_zip_to_bytes(content):
     archive = ZipFile(BytesIO(content))
-    with open(archive.namelist()[0], 'rb') as fin:
-        return fin.read()
+    return archive.read(archive.namelist()[0])
 
 
 def _bytes_to_text(content):
-    return content.decode('utf-8')
+    return bytes.decode(content, encoding='utf-8')
 
 
-_text_to_lines = str.splitlines
+def _text_to_lines(content):
+    return str.splitlines(content)
 
 
 def _lines_to_filtered_lines(content):
@@ -73,14 +71,10 @@ _STAGES_BY_EXTENSION = dict(
     zip=(_bytes_zip_to_bytes,),
 )
 
-# _execute_pipeline = functools.partial(functools.reduce, lambda c, fn: fn(c))
-
+# partial functions doing the same thing as the functions above:
 # _bytes_to_text = functools.partial(bytes.decode, encoding='utf-8')
-
 # _text_to_lines = str.splitlines
-
-# _lines_to_filtered_lines = functools.partial(filter, lambda x: x)
-
+# _lines_to_filtered_lines = functools.partial(filter, None)
 # _lines_csv_to_rows = csv.reader
 # _lines_psv_to_rows = functools.partial(csv.reader, delimiter='|')
 # _lines_tsv_to_rows = functools.partial(csv.reader, delimiter='\t')
