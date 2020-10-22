@@ -9,7 +9,30 @@ def replace_item(items, index, replace):
 #
 
 def replace_item(items, index, replace):
-    return (replace if i == index else item for i, item in enumerate(items))
+    return (
+        replace if i == index else item
+        for i, item in enumerate(items)
+    )
+
+
+#
+# replace statement with expression
+#
+
+def decompress(content):
+    archive = ZipFile(BytesIO(content))
+    first_file = archive.namelist()[0]
+    return archive.read(first_file)
+
+#
+
+def decompress(content):
+    return first_file_from_archive(
+        zipfile.ZipFile(io.BytesIO(content))
+    )
+
+def first_file_from_archive(archive):
+    return archive.read(archive.namelist()[0])
 
 
 #
@@ -29,36 +52,21 @@ def get_lengths(values):
 
 
 #
-# replace statement with expression
-#
-
-def decompress(content):
-    archive = ZipFile(BytesIO(content))
-    file = archive.namelist()[0]
-    with open(file, 'rb') as fin:
-        return fin.read()
-
-#
-
-def decompress(content):
-    return first_file_from_archive(zipfile.ZipFile(io.BytesIO(content)))
-
-def first_file_from_archive(archive):
-    return archive.read(archive.namelist()[0])
-
-
-#
-# class method moved to module level
+# move class method to module
 #
 
 class FileParser():
     def text_to_rows(self):
-        return csv.reader(line for line in self.text.splitlines() if line)
+        return csv.reader(
+            line for line in self.text.splitlines() if line
+        )
 
 #
 
 def text_to_rows(text):
-    return csv.reader(line for line in text.splitlines() if line)
+    return csv.reader(
+        line for line in text.splitlines() if line
+    )
 
 
 #
@@ -78,7 +86,10 @@ def iterate_file(filename):
 
 def iterate_file(filename):
     with open(filename, 'rb') as fin:
-        yield from execute_pipeline(build_pipeline(filename), fin)
+        yield from execute_pipeline(
+            build_pipeline(filename),
+            fin,
+        )
 
 def build_pipeline(filename):
     return ( <... generator that produces callables> )
