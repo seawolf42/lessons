@@ -2,21 +2,21 @@
 # copy-to-modify
 #
 
-def replace_item(items, index, new_value):
-    items[index] = new_value
-    return items
+def replace_item(items, index, replace):
+    items[index] = replace
+    return items  # why even bother?
 
 #
 
-def replace_item(items, index, new_value):
-    return items[:index] + [new_value] + items[index + 1:]
+def replace_item(items, index, replace):
+    return (replace if i == index else item for i, item in enumerate(items))
 
 
 #
 # replace loop with generator
 #
 
-def get_lengthsa(values):
+def get_lengths(values):
     lengths = []
     for value in values:
         lengths.append(len(value))
@@ -24,22 +24,8 @@ def get_lengthsa(values):
 
 #
 
-def get_lengthsb(values):
+def get_lengths(values):
     return (len(value) for value in values)
-
-
-#
-# class method moved to module level
-#
-
-class FileParser():
-    def text_to_rows(self):
-        return csv.reader(line for line in self.text.splitlines() if line)
-
-#
-
-def text_to_rows(text):
-    return csv.reader(line for line in text.splitlines() if line)
 
 
 #
@@ -62,16 +48,30 @@ def first_file_from_archive(archive):
 
 
 #
+# class method moved to module level
+#
+
+class FileParser():
+    def text_to_rows(self):
+        return csv.reader(line for line in self.text.splitlines() if line)
+
+#
+
+def text_to_rows(text):
+    return csv.reader(line for line in text.splitlines() if line)
+
+
+#
 # decompose function
 #
 
-def iterate_file(self):
-    with open(self._filename, 'rb') as fin:
+def iterate_file(filename):
+    with open(filename, 'rb') as fin:
         content = fin.read()
-        if self.decompress:
-            content = self.decompress(content)
+        if filename.split('.')[-1] == 'zip':
+            content = decompress(content)
         content = content.decode('utf-8')
-        for row in self._text_to_rows(content):
+        for row in text_to_rows(content):
             yield row
 
 #
@@ -84,7 +84,23 @@ def build_pipeline(filename):
     return ( <... generator that produces callables> )
 
 def execute_pipeline(pipeline, fin):
-    return functools.reduce(lambda content, stage: stage(content), pipeline, fin.read())
+    return functools.reduce(
+        lambda content, stage: stage(content),
+        pipeline,
+        fin.read(),
+    )
+
+
+#
+# deprecate class
+#
+
+class OldClass():
+    pass
+
+#
+
+# sorry, the class serves no purpose now
 
 
 #
