@@ -10,8 +10,9 @@ ENV_DIR = ${PWD}/env
 BIN_DIR = ${ENV_DIR}/bin
 JUPYTER ?= ${BIN_DIR}/jupyter
 PYTHON ?= ${BIN_DIR}/python
-PIPENV ?= ${BIN_DIR}/pipenv
+PIPENV ?= pipenv
 
+DEV_ENV = ./.devcontainer
 
 #
 # requirements
@@ -22,7 +23,7 @@ init: reqs
 
 .PHONY: reqs
 reqs:
-	${PIPENV} install
+	${PIPENV} lock -r --dev > ${DEV_ENV}/requirements.txt
 
 
 #
