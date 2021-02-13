@@ -5,12 +5,6 @@
   "prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.useEditorConfig": true,
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "${workspaceRoot}/env/bin/flake8",
-  "python.linting.pylintEnabled": false,
-  "python.pipenvPath": "${workspaceRoot}/env/bin/pipenv",
-  "python.pythonPath": "${workspaceRoot}/env/bin/python",
-  "python.terminal.activateEnvironment": true,
   "files.exclude": {
     "env": true,
     "**/__pycache__": true,
