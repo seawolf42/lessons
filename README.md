@@ -17,6 +17,7 @@ All the lessons and presentations by me, either directly in this repo or linked 
 * [Python Environments with `pyenv`](./pyenv/)
 * [Building a Slackbot](./slackbot/)
 * [Context Managers](./context-managers/)
+* [Lambda Functions](./lambda-functions/)
 
 ## Lightning Talks
 
