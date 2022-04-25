@@ -9,7 +9,7 @@
 # requirements. To emit only development requirements, pass "--dev-only".
 
 -i https://pypi.org/simple
-aiohttp==3.7.3
+aiohttp==3.7.4
 appdirs==1.4.4
 argon2-cffi==20.1.0
 async-generator==1.10; python_version >= '3.5'
